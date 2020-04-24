@@ -105,6 +105,13 @@ body {
 
 // @media only screen and (max-width: 500px) and (orientation: portrait) {
 @media only screen and (max-width: 1000px) {
+  body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    -webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+    }
+  }
   .App {
     flex-direction: column;
     justify-content: flex-start;
